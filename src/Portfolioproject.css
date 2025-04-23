@@ -1,0 +1,32 @@
+.project-screenshot {
+    max-width: 500px;
+    border: solid;
+    margin-bottom: 1.5em;
+}
+
+.project {
+    align-items: center;
+    padding: 2em;
+    border: solid;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px;
+    max-width: 50em;
+    margin: 2em;
+}
+
+.project-info__item {
+   max-width: 450px;
+}
+
+.project-title {
+    font-size: 36px;
+}
+
+.project-github {
+    text-decoration: underline;
+    color: blue;
+}
+
+.project-tech {
+    font-weight: 700;
+}
