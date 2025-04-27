@@ -5,3 +5,11 @@ div {
     flex-direction: column;
     align-items: center;
 }
+
+.project-btn {
+    font-size: 2em;
+    padding: 10px;
+    border: solid;
+    background-color: green;
+
+}
