@@ -4,13 +4,6 @@ import screenshot3 from "../assets/bank.png";
 import '../Portfolioproject.css';
 
 function Portfolioproject(props) {
-    let name = "project title";
-    let github = "project github";
-    let tech = "project tech";
-    let func = "This is what the project does";
-    let lesson = "This is what I learned";
-    let role = "This was my role during the project";
-    let challenge = "I overcame the following challenges";
 
     return (
         <div className="project">
