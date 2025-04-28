@@ -4,7 +4,7 @@ function Navbar() {
     return (
         <div>
             <nav className="z-50">
-                <ul>
+                <ul className="flex gap-10 p-10 br-10">
                     <li> <Link to="/">Home</Link></li>
                     <li> <Link to="/about">About</Link></li>
                     <li><Link to="/projects">Show projects</Link></li>

@@ -7,7 +7,11 @@ import screenshot2 from "../assets/genesis-project.png";
 import screenshot3 from "../assets/bank.png";
 
 export default function Hero() {
-  const [showProjects, setShowProjects] = useState(false)
+  const [visa, setVisa] = useState(false);
+
+  const toggleVisa = () => {
+    setVisa(!visa);
+  };
 
   return (
     <div className="bg-white">
@@ -34,15 +38,15 @@ export default function Hero() {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <button
-                onClick={() => setShowProjects(!showProjects)}
+                onClick={toggleVisa}
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                {showProjects ? 'Hide Projects' : 'Show Projects'}
+                {visa ? 'Hide Projects' : 'Show Projects'}
               </button>
             </div>
           </div>
 
-          {showProjects && (
+          {visa && (
             <div className="mt-10 text-center">
               <div className="mt-6 space-y-8">
                 <Portfolioproject 
@@ -95,5 +99,5 @@ export default function Hero() {
         </div>
       </div>
     </div>
-  )
+  );
 }
