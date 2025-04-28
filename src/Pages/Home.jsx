@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import Projects from "./Projects";
 import { useState } from "react";
+import Hero from "../components/Hero";
 
 function Home() {
 
@@ -18,12 +19,9 @@ function Home() {
     
     return (
         <div>
-            <h1>Home</h1>
-            <button className="project-btn" onClick={toggleVisa}>Click me</button>
+            <Hero />
             {visa &&  <Projects  />}
         </div>
-      
-        
     )
 }
 
