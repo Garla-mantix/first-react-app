@@ -7,6 +7,7 @@ function Projects() {
     return (
         <div>
       <Portfolioproject 
+      id="gme"
       name="Typing game" 
       screenshot={screenshot1} 
       github="https://github.com/Garla-mantix/js-seventh-assignment.git" 
@@ -17,6 +18,7 @@ function Projects() {
       challenge="Randomizing words to create re-playability, creating an up to date score-tracker and timer, putting user input to use." />
 
       <Portfolioproject 
+      id="gen"
       name="Genesis project" 
       screenshot={screenshot2} 
       github="https://github.com/Garla-mantix/genesis-portfolio.git" 
@@ -27,6 +29,7 @@ function Projects() {
       challenge="Recreating design from Figma, making a dynamic user experience with responsive design." />
 
       <Portfolioproject 
+      id="bnk"
       name="Bank app" 
       screenshot={screenshot3} 
       github="https://github.com/Garla-mantix/js-fifth-assignment.git" 
