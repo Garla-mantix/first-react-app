@@ -1,9 +1,9 @@
 import screenshot1 from "../assets/typing-game.png";
 import screenshot2 from "../assets/genesis-project.png";
 import screenshot3 from "../assets/bank.png";
-import '../Portfolioproject.css';
+import '../card.css';
 import { useState } from "react";
-import Pop from "../components/Pop";
+import Pop from "./Popup";
 
 function Portfolioproject(props) {
     const [isOpen, setIsOpen] = useState(false);

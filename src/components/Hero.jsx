@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import Portfolioproject from "../components/Portfolioproject";
+import Card from "../components/card";
 import screenshot1 from "../assets/typing-game.png";
 import screenshot2 from "../assets/genesis-project.png";
 import screenshot3 from "../assets/bank.png";

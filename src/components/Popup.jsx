@@ -4,7 +4,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
-export default function Pop({ popupInfo, onClose }) {
+export default function Popup({ popupInfo, onClose }) {
   return (
     <div className="fixed inset-0 bg-opacity-50 z-50 flex items-center justify-center">
       <div className={classNames('relative bg-gray-900 shadow-2xl', 'rounded-3xl p-8 ring-1 ring-gray-900/10 sm:p-10 max-w-lg w-full')}>
