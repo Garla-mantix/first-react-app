@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Hero from '../components/Hero';
-import Projects from './Projects';
+import Portfolio from './Portfolio';
 
 function Home() {
    
