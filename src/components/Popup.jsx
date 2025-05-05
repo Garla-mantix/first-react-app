@@ -12,7 +12,7 @@ export default function Popup({ popupInfo, onClose }) {
         <p className="text-5xl font-semibold tracking-tight text-white">
           {popupInfo.title}</p>
         <p className="mt-6 text-base/7 text-gray-300">{popupInfo.info}</p>
-        <a href="/Projects" className="mt-8 block rounded-md bg-indigo-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs
+        <a href="/portfolio" className="mt-8 block rounded-md bg-indigo-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs
          hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 sm:mt-10">See more</a>
       </div>
     </div>
