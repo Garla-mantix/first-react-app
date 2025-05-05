@@ -71,7 +71,10 @@ const Portfolio = () => {
   return (
   <div>
     <h2 className="text-3xl font-semibold text-center">My Projects</h2>
-    <div className="mt-6 space-y-8">
+    <div className="flex justify-center mt-8 max-w-7x1 mx-auto">
+      <input type="text" className="border border-gray-300 rounded-lg px-4 py-2" placeholder="Search..." value={search} onChange={(e) => setSearch(e.target.value)} />
+    </div>
+    <div className="flex justify-center mt-8 flex-wrap max-w-7x1 mx-auto">
       <Card 
         name="Typing game" 
         screenshot={screenshot1} 
