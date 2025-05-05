@@ -16,9 +16,9 @@ const Portfolio = () => {
   const projects = [
     {
       title: "Typing game", 
-      screenshot: {screenshot1},
+      screenshot: (screenshot1),
       github: "https://github.com/Garla-mantix/js-seventh-assignment.git",
-      tech: "Javascript + CSS + HTML",
+      tech: ["Javascript", "CSS"],
       func: "A fun little game that makes you spell random words against the clock.",
       lesson: "Taught me to use user input to affect the backend and show it back on the screen.",
       role: "Solo project",
@@ -26,9 +26,9 @@ const Portfolio = () => {
     },
     {
       title: "Genesis project",
-      screenshot: {screenshot2}, 
+      screenshot: (screenshot2), 
       github: "https://github.com/Garla-mantix/genesis-portfolio.git",
-      tech: "Javascript + SCSS",
+      tech: ["Javascript", "SCSS"],
       func: "A functional website for a portfolio.",
       lesson: "Taught me to execute a design from Figma and make it into a reality.",
       role: "Solo project",
@@ -36,9 +36,9 @@ const Portfolio = () => {
     },
     {
       title: "Bank app",
-      screenshot: {screenshot3},
+      screenshot: (screenshot3),
       github: "https://github.com/Garla-mantix/js-fifth-assignment.git", 
-      tech: "Javascript + HTML",
+      tech: ["Javascript", "HTML"],
       func: "A simple banking app that allows you to deposit and withdraw money from your account.",
       lesson: "Taught me to display the effects of user input.",
       role: "Solo project",
@@ -75,36 +75,7 @@ const Portfolio = () => {
       <input type="text" className="border border-gray-300 rounded-lg px-4 py-2" placeholder="Search..." value={search} onChange={(e) => setSearch(e.target.value)} />
     </div>
     <div className="flex justify-center mt-8 flex-wrap max-w-7x1 mx-auto">
-      <Card 
-        name="Typing game" 
-        screenshot={screenshot1} 
-        github="https://github.com/Garla-mantix/js-seventh-assignment.git" 
-        tech="Javascript + CSS + HTML" 
-        func="A fun little game that makes you spell random words against the clock." 
-        lesson="Taught me to use user input to affect the backend and show it back on the screen." 
-        role="Solo project" 
-        challenge="Randomizing words to create re-playability..." 
-      />
-      <Card 
-        name="Genesis project" 
-        screenshot={screenshot2} 
-        github="https://github.com/Garla-mantix/genesis-portfolio.git" 
-        tech="Javascript + SCSS" 
-        func="A functional website for a portfolio." 
-        lesson="Taught me to execute a design from Figma..." 
-        role="Solo project" 
-        challenge="Recreating design from Figma..." 
-      />
-      <Card 
-        name="Bank app" 
-        screenshot={screenshot3} 
-        github="https://github.com/Garla-mantix/js-fifth-assignment.git" 
-        tech="Javascript + HTML" 
-        func="A simple banking app..." 
-        lesson="Taught me to display the effects of user input." 
-        role="Solo project" 
-        challenge="Using the most basic tools..." 
-      />
+      {projects.filter((item) => (item.tech.some((tech) => tech.toLowerCase().includes(search.toLowerCase())))).map((item, index) => (<Card key={index} title={item.title} tech={item.tech} screenshot={item.screenshot}  />))}
     </div>
   </div>
   );

@@ -50,10 +50,10 @@ export default function Hero() {
             <div className="mt-10 text-center">
               <div className="mt-6 space-y-8">
                 <Card 
-                  name="Typing game" 
+                  title="Typing game" 
                   screenshot={screenshot1} 
                   github="https://github.com/Garla-mantix/js-seventh-assignment.git" 
-                  tech="Javascript + CSS + HTML" 
+                  tech={["Javascript", "CSS"]}
                   func="A fun little game that makes you spell random words against the clock." 
                   lesson="Taught me to use user input to affect the backend and show it back on the screen." 
                   role="Solo project" 
@@ -61,10 +61,10 @@ export default function Hero() {
                 />
                 
                 <Card 
-                  name="Genesis project" 
+                  title="Genesis project" 
                   screenshot={screenshot2} 
                   github="https://github.com/Garla-mantix/genesis-portfolio.git" 
-                  tech="Javascript + SCSS" 
+                  tech={["Javascript", "CSS"]}
                   func="A functional website for a portfolio." 
                   lesson="Taught me to execute a design from Figma and make it into a reality."
                   role="Solo project" 
@@ -72,10 +72,10 @@ export default function Hero() {
                 />
 
                 <Card 
-                  name="Bank app" 
+                  title="Bank app" 
                   screenshot={screenshot3} 
                   github="https://github.com/Garla-mantix/js-fifth-assignment.git" 
-                  tech="Javascript + HTML" 
+                  tech={["Javascript", "CSS"]}
                   func="A simple banking app that allows you to deposit and withdraw money from your account."
                   lesson="Taught me to display the effects of user input." 
                   role="Solo project" 
