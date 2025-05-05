@@ -21,7 +21,6 @@ const Portfolio = () => {
       tech: ["Javascript", "CSS"],
       func: "A fun little game that makes you spell random words against the clock.",
       lesson: "Taught me to use user input to affect the backend and show it back on the screen.",
-      role: "Solo project",
       challenge: "Randomizing words to create re-playability, creating an up to date score-tracker and timer, putting user input to use.",
     },
     {
@@ -31,7 +30,6 @@ const Portfolio = () => {
       tech: ["Javascript", "SCSS"],
       func: "A functional website for a portfolio.",
       lesson: "Taught me to execute a design from Figma and make it into a reality.",
-      role: "Solo project",
       challenge: "Recreating design from Figma, making a dynamic user experience with responsive design.",
     },
     {
@@ -41,7 +39,6 @@ const Portfolio = () => {
       tech: ["Javascript", "HTML"],
       func: "A simple banking app that allows you to deposit and withdraw money from your account.",
       lesson: "Taught me to display the effects of user input.",
-      role: "Solo project",
       challenge: "Using the most basic tools to create a functioning app with an intuitive user experience.",
     },
   ];
@@ -72,10 +69,20 @@ const Portfolio = () => {
   <div>
     <h2 className="text-3xl font-semibold text-center">My Projects</h2>
     <div className="flex justify-center mt-8 max-w-7x1 mx-auto">
-      <input type="text" className="border border-gray-300 rounded-lg px-4 py-2" placeholder="Search..." value={search} onChange={(e) => setSearch(e.target.value)} />
+      <input type="text" className="border border-gray-300 rounded-lg px-4 py-2" placeholder="Search for tech..." value={search} onChange={(e) => setSearch(e.target.value)} />
     </div>
     <div className="flex justify-center mt-8 flex-wrap max-w-7x1 mx-auto">
-      {projects.filter((item) => (item.tech.some((tech) => tech.toLowerCase().includes(search.toLowerCase())))).map((item, index) => (<Card key={index} title={item.title} tech={item.tech} screenshot={item.screenshot}  />))}
+      {projects.filter((item) => (item.tech.some((tech) => tech.toLowerCase().includes(search.toLowerCase())))).map((item, index) => (
+        <Card key={index} 
+        title={item.title} 
+        tech={item.tech} 
+        screenshot={item.screenshot}
+        github={item.github}
+        func={item.func}
+        lesson={item.lesson}
+        role={item.role}
+        challenge={item.challenge}
+          />))}
     </div>
   </div>
   );

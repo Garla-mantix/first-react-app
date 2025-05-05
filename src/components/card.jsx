@@ -20,14 +20,13 @@ function Card(props) {
           <h2 className="project-title">{props.title}</h2>
           <img src={props.screenshot} alt="a screenshot" className="project-screenshot" />
         </div>
-  
         <a href={props.github} className="project-github">{props.github}</a>
-        <ul className="project-tech flex gap-2">{props.tech.map((item, index) => (<li key={index}>{item}</li>))}</ul>
+        <ul className="project-tech flex gap-2">{props.tech.map((item, index) => (<li key={index}>#{item}</li>))}</ul>
         <ul className="project-info">
-          <li className="project-info__item">{props.func}</li>
-          <li className="project-info__item">{props.lesson}</li>
+          <li className="project-info__item fun">{props.func}</li>
+          {props.lesson && <li className="project-info__item"><span>Lesson learned: </span>{props.lesson}</li>}
           <li className="project-info__item">{props.role}</li>
-          <li className="project-info__item">{props.challenge}</li>
+          {props.challenge && <li className="project-info__item"><span>Challenges overcome: </span>{props.challenge}</li>}
         </ul>
         {isOpen && (<Pop onClose={() => setIsOpen(false)} popupInfo={popupInfo} />)}
       </div>

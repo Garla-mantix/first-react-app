@@ -52,34 +52,22 @@ export default function Hero() {
                 <Card 
                   title="Typing game" 
                   screenshot={screenshot1} 
-                  github="https://github.com/Garla-mantix/js-seventh-assignment.git" 
-                  tech={["Javascript", "CSS"]}
-                  func="A fun little game that makes you spell random words against the clock." 
-                  lesson="Taught me to use user input to affect the backend and show it back on the screen." 
-                  role="Solo project" 
-                  challenge="Randomizing words to create re-playability, creating an up to date score-tracker and timer, putting user input to use." 
+                  tech={["#Javascript", "#CSS"]}
+                  func="A fun little game that makes you spell random words against the clock."     
                 />
                 
                 <Card 
                   title="Genesis project" 
                   screenshot={screenshot2} 
-                  github="https://github.com/Garla-mantix/genesis-portfolio.git" 
-                  tech={["Javascript", "CSS"]}
+                  tech={["#Javascript", "#SCSS"]}
                   func="A functional website for a portfolio." 
-                  lesson="Taught me to execute a design from Figma and make it into a reality."
-                  role="Solo project" 
-                  challenge="Recreating design from Figma, making a dynamic user experience with responsive design." 
                 />
 
                 <Card 
                   title="Bank app" 
                   screenshot={screenshot3} 
-                  github="https://github.com/Garla-mantix/js-fifth-assignment.git" 
-                  tech={["Javascript", "CSS"]}
+                  tech={["#Javascript", "#HTML"]}
                   func="A simple banking app that allows you to deposit and withdraw money from your account."
-                  lesson="Taught me to display the effects of user input." 
-                  role="Solo project" 
-                  challenge="Using the most basic tools to create a functioning app with an intuitive user experience." 
                 />
               </div>
             </div>

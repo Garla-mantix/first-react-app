@@ -12,10 +12,12 @@
     box-shadow: 2px 2px 2px;
     max-width: 50em;
     margin: 2em;
+    text-align: center;
 }
 
 .project-info__item {
    max-width: 450px;
+   margin-bottom: 0.8em;
 }
 
 .project-title {
@@ -25,8 +27,19 @@
 .project-github {
     text-decoration: underline;
     color: blue;
+    margin-bottom: 1em;
 }
 
 .project-tech {
     font-weight: 700;
+    margin-bottom: 1em;
+}
+
+span {
+    font-weight: 700;
+}
+
+.fun {
+    font-style: italic;
+    font-size: 18px;
 }
