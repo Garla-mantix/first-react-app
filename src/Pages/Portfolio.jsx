@@ -2,9 +2,9 @@ import React from "react";
 import Card from "../components/card";
 import Popup from "../components/Popup";
 import { useState } from "react";
-// import screenshot1 from "../assets/typing-game.png";
-// import screenshot2 from "../assets/genesis-project.png";
-// import screenshot3 from "../assets/bank.png";
+import screenshot1 from "../assets/typing-game.png";
+import screenshot2 from "../assets/genesis-project.png";
+import screenshot3 from "../assets/bank.png";
 
 const Portfolio = () => {
   const [preview, setPreview] = useState(false);
