@@ -13,7 +13,7 @@ const Portfolio = () => {
   const projects = [
     {
       title: "Typing game", 
-      screenshot: {screenshot1},
+     
       github: "https://github.com/Garla-mantix/js-seventh-assignment.git",
       tech: "Javascript + CSS + HTML",
       func: "A fun little game that makes you spell random words against the clock.",
@@ -23,7 +23,7 @@ const Portfolio = () => {
     },
     {
       title: "Genesis project",
-      screenshot: {screenshot2}, 
+     
       github: "https://github.com/Garla-mantix/genesis-portfolio.git",
       tech: "Javascript + SCSS",
       func: "A functional website for a portfolio.",
@@ -33,7 +33,7 @@ const Portfolio = () => {
     },
     {
       title: "Bank app",
-      screenshot: {screenshot3},
+      
       github: "https://github.com/Garla-mantix/js-fifth-assignment.git", 
       tech: "Javascript + HTML",
       func: "A simple banking app that allows you to deposit and withdraw money from your account.",
@@ -91,18 +91,18 @@ return (
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <button
-                  onClick={toggleVisa}
+                  onClick={changePreview}
                   className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
-                  {visa ? 'Hide Projects' : 'Show Projects'}
+                  {preview ? 'Hide Projects' : 'Show Projects'}
                 </button>
               </div>
             </div>
   
-            {visa && (
+            {preview && (
               <div className="mt-10 text-center">
                 <div className="mt-6 space-y-8">
-                  <Portfolioproject 
+                  <Card 
                     name="Typing game" 
                     screenshot={screenshot1} 
                     github="https://github.com/Garla-mantix/js-seventh-assignment.git" 
@@ -113,7 +113,7 @@ return (
                     challenge="Randomizing words to create re-playability, creating an up to date score-tracker and timer, putting user input to use." 
                   />
                   
-                  <Portfolioproject 
+                  <Card 
                     name="Genesis project" 
                     screenshot={screenshot2} 
                     github="https://github.com/Garla-mantix/genesis-portfolio.git" 
@@ -124,7 +124,7 @@ return (
                     challenge="Recreating design from Figma, making a dynamic user experience with responsive design." 
                   />
   
-                  <Portfolioproject 
+                  <Card 
                     name="Bank app" 
                     screenshot={screenshot3} 
                     github="https://github.com/Garla-mantix/js-fifth-assignment.git" 

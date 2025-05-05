@@ -49,7 +49,7 @@ export default function Hero() {
           {visa && (
             <div className="mt-10 text-center">
               <div className="mt-6 space-y-8">
-                <Portfolioproject 
+                <Card 
                   name="Typing game" 
                   screenshot={screenshot1} 
                   github="https://github.com/Garla-mantix/js-seventh-assignment.git" 
@@ -60,7 +60,7 @@ export default function Hero() {
                   challenge="Randomizing words to create re-playability, creating an up to date score-tracker and timer, putting user input to use." 
                 />
                 
-                <Portfolioproject 
+                <Card 
                   name="Genesis project" 
                   screenshot={screenshot2} 
                   github="https://github.com/Garla-mantix/genesis-portfolio.git" 
@@ -71,7 +71,7 @@ export default function Hero() {
                   challenge="Recreating design from Figma, making a dynamic user experience with responsive design." 
                 />
 
-                <Portfolioproject 
+                <Card 
                   name="Bank app" 
                   screenshot={screenshot3} 
                   github="https://github.com/Garla-mantix/js-fifth-assignment.git" 
